@@ -1,0 +1,130 @@
+<html>
+
+<head>
+  <title>portfolio</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <a href="index.html"><img src="img/slogo.png" width="160" height="50"></a>
+  <div class="a">
+    <a href="portfolio.html">PORTFOLIO</a>
+    <a href="team.html">TEAM</a>
+    <a href="news.html">NEWS</a>
+    <a href="reachus.html">LOCATION</a>
+  </div>
+  <div class="container">
+
+    <img class="a" src="img/S.png" alt="Cinque Terre" width="1000" height="100">
+    <div class="center">Portfolio</div>
+
+  </div>
+  <div class="c">
+  
+    <h1>. . .</h1>
+    <h1>Pursuing Master of Science in Computer Science at Syracuse university
+     <h2>Presenting Indian Culture and Indian Food</h2>   
+      <br>
+      <br>
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">All</button>
+        <button class="tablinks" onclick="openCity(event, 'AP')">Andhra Pradesh</button>
+        <button class="tablinks" onclick="openCity(event, 'KN')">Karnataka</button>
+        <button class="tablinks" onclick="openCity(event, 'OT')">Kerala</button>
+        <button class="tablinks" onclick="openCity(event, 'OA')">Tamil Nadu</button>
+        <button class="tablinks" onclick="openCity(event, 'OT')">Goa</button>
+        <button class="tablinks" onclick="openCity(event, 'OA')">Maharastra</button>
+        <button class="tablinks" onclick="openCity(event, 'OT')">Gujarat</button>
+        <button class="tablinks" onclick="openCity(event, 'OA')">Punjab</button>
+      </div>
+      <div id="London" class="tabcontent">
+        <img src="img/a1.jpeg" width="300" height="300">
+        <img src="img/a2.jpeg" width="300" 
+        height="300">
+        <img src="img/a3.jpeg" width="300" 
+        height="300">
+        <img src="img/k1.jpeg" width="300" height="300">
+        <img src="img/h1.jpeg" width="300" height="300">
+        <img src="img/h2.jpeg" width="300" height="300">
+        <img src="img/h3.jpeg" width="300" height="300">
+        <img src="img/k2.jpeg" width="300" height="300">
+        <img src="img/k3.jpeg" width="300" height="300">
+        <img src="img/k4.jpeg" width="300" height="300">
+      </div>
+
+      <div id="AP" class="tabcontent">
+        <img src="img/a4.jpg" width="300" 
+        height="300">
+        <img src="img/a5.jpeg" width="300" 
+        height="300">   
+      </div>
+      <div id="KN" class="tabcontent">
+        <img src="img/k1.jpeg" width="300" height="300">
+        <img src="img/k2.jpeg" width="300" height="300">
+        <img src="img/k3.jpeg" width="300" height="300">
+        <img src="img/k4.jpeg" width="300" height="300">
+        
+      </div>
+      <div id="OT" class="tabcontent">
+        <img src="img/h1.jpeg" width="300" height="300">
+        <img src="img/h2.jpeg" width="300" height="300">
+        <img src="img/h3.jpeg" width="300" height="300">
+ 
+        
+      </div>
+      <div id="OA" class="tabcontent">
+        <img src="img/k1.jpeg" width="300" height="300">
+        <img src="img/a4.jpg" width="300" height="300">
+        <img src="img/a2.jpeg" width="300" height="300">     
+      </div>
+      <hr class="a">
+      <table>
+        <form>
+          <tr>
+            <th>Discover</th>
+          </tr>
+          <tr>
+            <td><a href="portfolio.html">Portfolio</a></td>
+          </tr>
+          <tr>
+            <td><a href="team.html">Team</a></td>
+          </tr>
+        
+          <tr>
+            <td><a href="news.html">News</a></td>
+            
+          <tr>
+            <td><a href="reachus.html">Location</a></td>
+            
+          </tr>
+        </form>
+      </table>
+
+      <hr class="a">
+  </div>
+  <p class="a">© 2017 SAIF Partners. All Rights Reserved</p>
+  </br>
+  </br>
+  </br>
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+  </script>
+
+
+
+</body>
+
+</html>

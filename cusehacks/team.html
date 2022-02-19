@@ -1,0 +1,112 @@
+<html>
+
+<head>
+  <title>team</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <a href="index.html"><img src="img/slogo.png" width="160" height="50"></a>
+  <div class="a">
+    <a href="portfolio.html">PORTFOLIO</a>
+    <a href="team.html">TEAM</a>
+    <a href="news.html">NEWS</a>
+    <a href="reachus.html">REACHUS</a>
+  </div>
+  <div class="c">
+    <div class="b">
+      Team
+    </div>
+    </br>
+    <h1>. . .</h1>
+    <h1>OUR TEAM - CUSE HACKS 2022</h1>
+    <hr class="a">
+
+
+
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">All</button>
+
+    </div>
+
+    <div id="London" class="tabcontent">
+      <figure>
+        <img src="img/t2.PNG" width="200" height="200">
+        <figcaption>Jahnavi P</figcaption>
+      </figure>
+      <figure>
+        <img src="img/t1.png" width="200" height="200">
+        <figcaption>Sinchana S S</figcaption>
+      </figure>
+      <figure>
+        <img src="img/t3.png" width="200" height="200">
+        <figcaption>Tejaswini B M</figcaption>
+      </figure>
+      <figure>
+        <img src="img/t4.png" width="200" height="200">
+        <figcaption>Bindu H A</figcaption>
+      </figure>
+
+      <div>
+        <img src="img/IMG_5984.JPG" width="700" height="400">
+      </div>
+
+    </div>
+
+
+
+    <hr class="a">
+    <p class="a">Participated in CUSE HACKS 2022 - conducted in Syracuse University</p>
+    <hr class="a">
+    <table>
+      <form>
+        <tr>
+          <th>Discover</th>
+        </tr>
+        <tr>
+          <td><a href="portfolio.html">Portfolio</a></td>
+        </tr>
+        <tr>
+          <td><a href="team.html">Team</a></td>
+        </tr>
+       
+        <tr>
+          <td><a href="news.html">News</a></td>
+          
+        <tr>
+          <td><a href="reachus.html">Reach Us</a></td>
+          
+        </tr>
+      </form>
+    </table>
+
+    <hr class="a">
+  </div>
+  <p class="a">© 2017 SAIF Partners. All Rights Reserved</p>
+  <br>
+
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Thankyou, you have subscribed to our news letter";
+    }
+
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
+</body>
+
+</html>
